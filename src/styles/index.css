@@ -1,0 +1,22 @@
+/*
+    index.css
+
+    Barrel import file for modular css.
+*/
+
+/*
+    _reset.css
+
+    link: https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+@import url("./_reset.css");
+
+/*
+    _base.css
+*/
+@import url("./_base.css");
+
+/*
+    _mobile.css
+*/
+@import url("./_mobile.css");
