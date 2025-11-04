@@ -78,12 +78,18 @@ export default defineConfig([
             "html/require-meta-viewport": "error",
 
             // style
-            "html/attrs-newline": "warn",
+            "html/attrs-newline": [
+                "error",
+                {
+                    closeStyle: "newline",
+                    ifAttrsMoreThan: 1,
+                },
+            ],
             "html/indent": "warn",
             "html/lowercase": "warn",
             "html/no-extra-spacing-attrs": "warn",
             "html/no-extra-spacing-text": ["warn", { skip: ["pre", "code"] }],
-            "html/no-multiple-empty-lines": "warn",
+            "html/no-multiple-empty-lines": ["warn", { max: 0 }],
             "html/no-trailing-spaces": "warn",
             "html/quotes": "warn",
             "html/sort-attrs": [
