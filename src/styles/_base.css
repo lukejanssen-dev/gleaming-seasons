@@ -298,34 +298,16 @@ h6 {
         display: block;
         border-radius: var(--border-radius);
         box-shadow: 0 4px 12px rgb(0 0 0 / 10%);
-        background: linear-gradient(
-            90deg,
-            #f0f0f0 25%,
-            #e0e0e0 50%,
-            #f0f0f0 75%
-        );
-        background-size: 200% 100%;
         opacity: 0;
+        transform: translateY(30px);
         transition:
-            opacity 0.4s ease-in,
+            opacity 0.3s ease-in,
             transform 0.3s ease-out;
-        will-change: opacity;
+        will-change: opacity, transform;
 
-        /* Loading state - skeleton animation */
-        &.loading {
-            animation: shimmer 1.5s infinite;
-        }
-
-        /* Loaded state - fade in */
-        &.loaded {
+        &.img-show {
             opacity: 1;
-            transform: scale(1);
-        }
-
-        /* Error state */
-        &.error {
-            opacity: 0.5;
-            background: #ffebee;
+            transform: translateY(0);
         }
     }
 }
@@ -351,30 +333,6 @@ h6 {
 
     .job-type {
         font-size: 0.7rem;
-    }
-}
-
-/* Skeleton shimmer animation for loading images */
-@keyframes shimmer {
-    0% {
-        background-position: -200% 0;
-    }
-
-    100% {
-        background-position: 200% 0;
-    }
-}
-
-/* Smooth fade in for lazy loaded images */
-@keyframes fade-in {
-    from {
-        opacity: 0;
-        transform: scale(0.95);
-    }
-
-    to {
-        opacity: 1;
-        transform: scale(1);
     }
 }
 
