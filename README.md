@@ -2,7 +2,7 @@
     <img src="./public/logo/banner_t.webp" alt="Gleaming Seasons" width="400">
 </div>
 
-This repository contains the source code for the [Gleaming Seasons](https://gleamingseason.com) website.
+This repository contains the source code for the [Gleaming Seasons](https://gleamingseasons.com) website.
 
 ---
 
