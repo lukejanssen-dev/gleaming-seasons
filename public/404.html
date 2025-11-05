@@ -1,0 +1,32 @@
+<!-- eslint-disable html/require-open-graph-protocol -->
+<!-- eslint-disable html/require-meta-description -->
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        >
+        <meta
+            name="robots"
+            content="noindex, nofollow"
+        >
+        <link
+            href="/"
+            rel="canonical"
+        >
+        <meta
+            content="0; url=/"
+            http-equiv="refresh"
+        >
+        <title>Redirecting...</title>
+        <script>
+          console.log("Redirected from:", window.location.pathname);
+          window.location.replace("/");
+        </script>
+    </head>
+    <body>
+        <p>If you are not redirected automatically, <a href="/">click here</a>.</p>
+    </body>
+</html>
