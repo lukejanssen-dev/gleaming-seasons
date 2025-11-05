@@ -1,0 +1,8 @@
+# robots.txt for Gleaming Seasons
+# Allow all robots complete access
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://gleamingseasons.com/sitemap.xml
